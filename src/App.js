@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { CheckList } from './components/CheckList';
 import Home from './components/Home';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/checklist" exact>
+        <Route path="/calculadora" >
+          <Calculator/>
+        </Route>
+        <Route path="/checklist" >
           <CheckList></CheckList>
         </Route>
       </Switch>
