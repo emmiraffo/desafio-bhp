@@ -1,17 +1,34 @@
+import React, { useState } from 'react';
+import { withRouter } from 'react-router';
 
-import React from 'react';
+const Home = (props) => {
 
-const Home = () => {
+  const [role, setRole] = useState('zero');
+
+  const handleSelectChange = (e) => {
+    setRole(e.target.value)
+    alert('Acuerdo de licencia de usuario final (EULA)');
+    if (e.target.value === 'one') {
+      props.history.push('/harnessone');
+    }
+    if (e.target.value === 'two') {
+      props.history.push('/harnesstwo');
+    }
+    if (e.target.value === 'three') {
+      props.history.push('/harnessthree');
+    }
+  }
+
   return (
     <div>
-      <select className="form-select" aria-label="Default select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+      <select className="form-select" value={role} onChange={handleSelectChange}>
+        <option value="zero">SELECCIONA TU ESPECIALIDAD</option>
+        <option value="one">Eléctrico</option>
+        <option value="two">Soldador</option>
+        <option value="three">Trabajos generales</option>
       </select>
     </div>
   )
 }
 
-export default Home;
+export default withRouter(Home);
