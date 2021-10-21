@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './components/Home';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="/calculadora" >
+          <Calculator/>
         </Route>
       </Switch>
     </Router>
