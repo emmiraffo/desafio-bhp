@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { CheckList } from './components/CheckList';
 import Home from './components/Home';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="/checklist" exact>
+          <CheckList></CheckList>
         </Route>
       </Switch>
     </Router>
