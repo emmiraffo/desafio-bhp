@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 
 const CheckList = () => {
     
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
 
     const onSubmit = (data) => {
@@ -30,7 +30,7 @@ function generatePDF () {
 
     return (
         <div className="check-container">
-            <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" width="100px" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
             <h4 id ="h4"> Revisión de arnés de seguridad y puntos de anclaje</h4>
             <p>Por tu seguridad, asegurate de revisar tu área de trabajo.</p>
             <form onSubmit={handleSubmit(onSubmit)} id="form" className="p-1">
