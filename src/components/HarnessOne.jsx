@@ -1,6 +1,11 @@
 import React from 'react';
 
 export const HarnessOne = () => {
+
+  const continuar = () => {
+    window.location.href = "/checklist"
+  }
+
   return (
     <div className="container"> 
       <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" width="100px" />
@@ -59,13 +64,8 @@ export const HarnessOne = () => {
           Tomo conocimiento y me comprometo a cumplir con lo establecido en este documento.
           </label>  
         </div>
-
       </div>
-
-      <button type="button" class="btn btn-secondary">CONTINUAR</button>
-  </div>
-  
-  
+      <button type="button" class="btn btn-secondary" onClick={continuar}>CONTINUAR</button>
     </div>
  
     
