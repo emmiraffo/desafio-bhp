@@ -24,6 +24,10 @@
    font-weight: bold;
 }
 
+.accordion-flush{
+    border-radius: 10px ;
+    
+}
 .form-control{
 width: 70px;
 }
@@ -49,4 +53,27 @@ padding-left: 2%;
     color: white;
     border-color:rgba(255, 255, 255, 0);
     margin:  20% 30%;
+}
+
+.harnessInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10%;
+}
+
+.info{
+    font-size: 10px;
+}
+
+
+.knowledgeCheck{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.accordion{
+    padding-top: 10%;
 }
