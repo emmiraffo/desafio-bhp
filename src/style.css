@@ -32,6 +32,10 @@
    font-size: 30px;
 }
 
+.accordion-flush{
+    border-radius: 10px ;
+    
+}
 .form-control{
     width: 70px;    
 }
@@ -88,8 +92,6 @@
     border-color:rgba(255, 255, 255, 0);
     margin:  20% 30%;
 }
-
-
 /*PARA VISTA DESKTOP*/
 @media only screen  and (min-width:769px ) {
 .row{
@@ -129,4 +131,23 @@
     width: 40vw;
 }
 
+.harnessInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10%;
+}
+
+.info{
+    font-size: 10px;
+}
+.knowledgeCheck{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.accordion{
+    padding-top: 10%;
 }

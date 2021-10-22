@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { CheckList } from './components/CheckList';
+import CheckList  from './components/CheckList';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
 import HarnessOne from './components/HarnessOne';
@@ -37,7 +37,7 @@ function App() {
           <Calculator/>
         </Route>
         <Route path="/checklist" >
-          <CheckList></CheckList>
+          <CheckList />
         </Route>
       </Switch>
     </Router>
