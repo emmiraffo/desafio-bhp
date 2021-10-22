@@ -5,10 +5,7 @@ import { useState } from 'react'
 
 
 
-
-
 const CheckList = () => {
-
     const [valid, setValid] = useState({
     nombre: "",
     checked: false
