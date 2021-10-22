@@ -43,7 +43,7 @@ function Calculator() {
                 <span className="form-text"> metros </span>
             </div>
         </div>
-        <button type="button" class="btn btn-secondary">CALCULAR</button>
+        <button type="button" className="btn btn-secondary">CALCULAR</button>
     </div>
 
 }
