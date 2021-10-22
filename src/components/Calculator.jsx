@@ -25,26 +25,28 @@ function Calculator(props) {
         <h1 className="name">CALCULADORA</h1>
         <p  >ELC</p>
         <h1 className="nameForm">Ingreso de parámetros</h1>
-        <form className="container">
-            <div className="row">
-                <label className="col-form-label">Espacio Real Terreno</label>
-                <input type="number" min="1" step="0.10" onKeyUp={(e) => { setState({ ...state, 'ERT': Number(e.target.value) }) }} className="form-control" aria-describedby="passwordHelpInline" />
-                <span className="form-text"> metros </span>
+        <form onSubmit={checkIsSafe} class="needs-validation" >
+            <div class="form-check">
+                <div className="row">
+                    <label className="col-form-label" for="ert">Espacio Real Terreno</label>
+                    <input className="form-control" type="number"  min="1" step="0.10" onKeyUp={(e) => { setState({ ...state, 'ERT': Number(e.target.value) }) }} id="ert" required />
+                    <span className="form-text"> metros</span>
+                </div>
+                <div className="row">
+                    <label className="col-form-label">Longitud del estrobo</label>
+                    <input className="form-control" type="number"  min="1" step="0.10" onKeyUp={(e) => { setState({ ...state, 'LE': Number(e.target.value) }) }}  required />
+                    <span className="form-text"> metros </span>
+                </div>
+                <div className="row">
+                    <label className="col-form-label">Estatura del trabajador</label>
+                    <input className="form-control" type="number"  min="1" step="0.10" onKeyUp={(e) => { setState({ ...state, 'ET': Number(e.target.value) }) }} required />
+                    <span className="form-text"> metros </span>
+                </div>
             </div>
-            <div className="row">
-                <label className="col-form-label">Longitud del estrobo</label>
-                <input type="number" min="1" step="0.10" onKeyUp={(e) => { setState({ ...state, 'LE': Number(e.target.value) }) }} className="form-control" aria-describedby="passwordHelpInline" />
-                <span className="form-text"> metros </span>
-            </div>
-            <div className="row">
-                <label className="col-form-label">Estatura del trabajador</label>
-                <input type="number" min="1" step="0.10" onKeyUp={(e) => { setState({ ...state, 'ET': Number(e.target.value) }) }} className="form-control" aria-describedby="passwordHelpInline" />
-                <span className="form-text"> metros </span>
-            </div>
-            <button type="button" onClick={checkIsSafe} className="btn btn-secondary">CALCULAR</button>
+            <button type="submit"  className="btn btn-secondary">CALCULAR</button>
         </form>
-        </div>
-    
+    </div>
+
 }
 
 export default Calculator;
