@@ -138,8 +138,8 @@
     font-size: 10%;
 }
 
-.info{
-    font-size: 10px;
+.container p{
+    font-size: 0.2rem;
 }
 .knowledgeCheck{
     display: flex;
