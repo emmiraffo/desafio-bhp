@@ -1,6 +1,10 @@
 import React from 'react';
 
 const HarnessThree = () => {
+  const continuar = () => {
+    window.location.href = "/checklist"
+  }
+
   return (
     <div className="container">
       <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" width="100px" />
@@ -19,7 +23,7 @@ const HarnessThree = () => {
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         </h4>
       </div>
-      <button type="button" class="btn btn-secondary">CALCULAR</button>
+      <button type="button" class="btn btn-secondary" onClick={continuar}>CONTINUAR</button>
     </div>
   )
 }
