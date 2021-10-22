@@ -10,6 +10,8 @@ import Calculator from './components/Calculator';
 import HarnessOne from './components/HarnessOne';
 import HarnessTwo from './components/HarnessTwo';
 import HarnessThree from './components/HarnessThree';
+import Result from './components/Result';
+import WarningDanger from './components/WarningDanger';
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
         </Route>
         <Route path="/harnessone">
           <HarnessOne />
+        </Route>
+        <Route path="/resultado" render={(props) => <Result {...props.location.state} />} />
+        <Route path="/error">
+          <WarningDanger />
         </Route>
         <Route path="/harnesstwo">
           <HarnessTwo />

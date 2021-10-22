@@ -1,6 +1,5 @@
 .container{
     padding: 5%;
-    height: 100vh;
 }
 
 .name  {
@@ -19,29 +18,38 @@
 }
 
 .nameForm{
-   color: #FF6600;
+   color: #F77F00;
    text-align: center;
    font-weight: bold;
 }
 
 .form-control{
-width: 70px;
+    width: 70px;    
 }
 
-.col-auto{
-    font-weight: bold;
-    font-size: 18px;
-}
+
 
 .row{
     padding-top: 10%;
-align-items: center;
-padding-left: 2%;
+    align-items: center;
+    display: grid;
+    grid-template-columns:60% 20% 20% ;
+    grid-template-rows: 100%;
+    font-weight: bold;
+    font-size: 17px;
+}
 
+.row label{
+    padding: 0%;
+}
+
+.row span{
+    padding-left: 10%;
+    margin: 0;
 }
 
 .btn-secondary{
-    background-color: #E5651D;
+    background-color: #DD5900;
     align-items: center;
     width: 132px;
     height: 37px;  
@@ -49,4 +57,37 @@ padding-left: 2%;
     color: white;
     border-color:rgba(255, 255, 255, 0);
     margin:  20% 30%;
+}
+
+
+/*PARA VISTA DESKTOP*/
+@media only screen  and (min-width:769px ) {
+.row{
+    padding-top: 0;
+    width: 35%;
+    margin: auto;
+    grid-template-columns:60% 20% 20% ;
+    text-align: center;
+
+}
+
+.row label{
+    text-align:start;
+}
+.container{
+    padding: 3%;
+}
+
+.form-control{
+    width: 80px;    
+}
+
+.name  {
+    padding-top: 3%;
+} 
+
+.btn-secondary{
+    margin:  5% 45%;
+}
+
 }
