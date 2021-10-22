@@ -120,6 +120,8 @@ const HarnessThree = () => {
       </div>
       <button type="button" class="btn btn-secondary" onClick={continuar}>CONTINUAR</button>
     </div>
+    </div>
+    </div>
   )
 }
 

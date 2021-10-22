@@ -44,7 +44,7 @@ function Calculator(props) {
             <button type="button" onClick={checkIsSafe} className="btn btn-secondary">CALCULAR</button>
         </form>
         </div>
-    </div>
+    
 }
 
 export default Calculator;

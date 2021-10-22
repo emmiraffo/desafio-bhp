@@ -56,17 +56,19 @@ export const HarnessOne = () => {
           </div>
         </div>
 
-      <div className="knowledgeCheck">
-        
+      <div className="knowledgeCheck">  
         <div className="form-check">
           <input className="form-check-input my-2" type="checkbox" value="" id="flexCheckDefault"/>
           <label className="form-check-label my-1" for="flexCheckDefault">
-          Tomo conocimiento y me comprometo a cumplir con lo establecido en este documento.
+            Tomo conocimiento y me comprometo a cumplir con lo establecido en este documento.
           </label>  
         </div>
+         <button type="button" class="btn btn-secondary" onClick={continuar}>CONTINUAR</button>
       </div>
-      <button type="button" class="btn btn-secondary" onClick={continuar}>CONTINUAR</button>
-    </div>
+      </div>
+      </div>
+      
+    
  
     
     
