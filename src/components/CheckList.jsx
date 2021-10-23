@@ -2,20 +2,22 @@ import React from 'react'
 import html2pdf from 'html2pdf.js'
 import './CheckList.css'
 import { useForm } from "react-hook-form";
-// import { useState } from 'react'
+import { useHistory } from "react-router-dom";
 
 
 
 const CheckList = () => {
     
     const { register, handleSubmit, formState: { errors } } = useForm();
+    let history = useHistory();
 
 
     const onSubmit = (data) => {
         console.log(data)
-        window.location.href = "/calculadora"
+        history.push('/calculadora');
       
     }
+
 
 
 function generatePDF () {

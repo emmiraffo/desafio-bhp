@@ -1,9 +1,12 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
 const HarnessTwo = () => {
 
+  let history = useHistory();
+
   const continuar = () => {
-    window.location.href = "/checklist"
+    history.push('/checklist');
   }
 
   return (
