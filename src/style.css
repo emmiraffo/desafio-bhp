@@ -9,7 +9,7 @@
 
 }   
 
-.container p {
+.container-calculator p {
     color: #414141;
     text-align: center;
     font-weight: bold;
@@ -131,24 +131,4 @@
     width: 40vw;
 }
 
-.harnessInfo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 10%;
-}
-
-.container p{
-    font-size: 0.2rem;
-}
-.knowledgeCheck{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    padding-top: 10%;
-}
-
-.accordion{
-    padding-top: 10%;
-}
 }

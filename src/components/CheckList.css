@@ -7,15 +7,16 @@
     
 }
 
-.btn-calculator{
+.btn-checklist{
     align-self: center;
     background-color: #E5651D;
-    font-size: 0.8em;
-    height: 3em;  
+    font-size: 0.9em;
+    height: 2.5rem;
+    width: 7rem;
     border-radius: 50px; 
     color: white;
     border: none;
-    margin-top: 5%;
+    margin: 3%;
     
 }
 .btn-pdf{
@@ -24,4 +25,8 @@
     width: 32px;
     height: 32px;
     border-radius: 20px;
+}
+.text-pdf{
+    font-size: 0.7rem;
+
 }
