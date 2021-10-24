@@ -17,6 +17,10 @@ const CheckList = () => {
         history.push('/calculadora')  
     }
 
+    const backToHome = () => {
+        history.push('/')  
+    }
+
 
 
 function generatePDF () {
@@ -35,9 +39,9 @@ function generatePDF () {
             <form onSubmit={handleSubmit(onSubmit)} id="form" className="p-1">
                 <h4 className="text-center"> Revisión de arnés de seguridad y puntos de anclaje.</h4>
                 <h6 className="m-2">Asegúrate de revisar tu área de trabajo.</h6>
-                <div className="m-2 text-center">
+                <div className="m-2">
                     <label className="me-1">Ingresa tu nombre</label>
-                    <input type="text"  name="nombre" {...register("p1", { required: true })}/>
+                    <input type="text" className="input-name" name="nombre" {...register("p1", { required: true })}/>
                         {errors.p1 && <span className="text-danger text-small">Tu nombre es requerido</span>} 
                 </div>     
                 <h5>Estado del arnés</h5>
@@ -197,14 +201,14 @@ function generatePDF () {
                         NO se aprecian fisuras o golpes en el punto de anclaje.
                     </label>
                         {errors.p23 && <span className="text-danger text-small">Para continuar tu trabajo contacta a tu supervisor/a. ¡Tu seguridad es importante!</span>}
-                </div>
-                <div className="d-flex flex-row justify-content-center">
-                    <button type="submit" className="btn-checklist">Calcular ELC</button> 
-                    <button className="btn-checklist">Volver a Inicio</button>
-                </div>
+                </div>     
+                    <button type="submit" className="btn-checklist">Calcular ELC</button>      
             </form>
-            <button className="btn-pdf" onClick={generatePDF}></button>
-            <span className="text-pdf" >Descargar lista de revisión</span>
+            <div className="d-flex flex-r justify-content-center">
+                <button className="btn-pdf" onClick={generatePDF}></button>
+                <span className="text-pdf" >Descargar lista de revisión</span>
+                <button className="btn-checklist" onClick={backToHome}>Volver a Inicio</button>
+            </div>
         </div>
     )
 }
