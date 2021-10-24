@@ -4,12 +4,14 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { CheckList } from './components/CheckList';
+import CheckList  from './components/CheckList';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
 import HarnessOne from './components/HarnessOne';
 import HarnessTwo from './components/HarnessTwo';
 import HarnessThree from './components/HarnessThree';
+import Result from './components/Result';
+import WarningDanger from './components/WarningDanger';
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
         <Route path="/harnessone">
           <HarnessOne />
         </Route>
+        <Route path="/resultado" render={(props) => <Result {...props.location.state} />} />
+        <Route path="/error">
+          <WarningDanger />
+        </Route>
         <Route path="/harnesstwo">
           <HarnessTwo />
         </Route>
@@ -31,7 +37,7 @@ function App() {
           <Calculator/>
         </Route>
         <Route path="/checklist" >
-          <CheckList></CheckList>
+          <CheckList />
         </Route>
       </Switch>
     </Router>

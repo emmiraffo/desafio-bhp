@@ -1,5 +1,20 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router';
+import Modal from 'react-modal';
+import './Home.css'
+
+Modal.setAppElement('#root');
+
+const modalStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
 
 const Home = (props) => {
 
@@ -7,14 +22,24 @@ const Home = (props) => {
 
   const handleSelectChange = (e) => {
     setRole(e.target.value)
-    alert('Acuerdo de licencia de usuario final (EULA)');
-    if (e.target.value === 'one') {
+    handleOpenModal();
+  }
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalIsOpen(true);
+  }
+
+  const handleCloseModal = () => {
+    setModalIsOpen(false);
+    if (role === 'one') {
       props.history.push('/harnessone');
     }
-    if (e.target.value === 'two') {
+    if (role === 'two') {
       props.history.push('/harnesstwo');
     }
-    if (e.target.value === 'three') {
+    if (role === 'three') {
       props.history.push('/harnessthree');
     }
   }
@@ -46,7 +71,17 @@ const Home = (props) => {
           </div>
 
           <button type="buttonHome" class="btn btn-secondary">CONTINUAR</button>
-        </div>  
+        </div>
+        <div>
+        <Modal isOpen={modalIsOpen} style={modalStyles}>
+          <h1>Acuerdo de licencia de usuario final</h1>
+          <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+          <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+          <div>
+            <button onClick={handleCloseModal}>Acepto</button>
+          </div>
+        </Modal>
+      </div>  
       </div>
     </div>
   )
