@@ -162,6 +162,16 @@
 }
 
 
+.warning{
+    color:red;
+    font-size: 20px;
+    padding:  20% 0%;
+}
+
+.warning i {
+    color: red;
+}
+
 
 /*PARA VISTA DESKTOP*/
 @media only screen  and (min-width:769px ) {
