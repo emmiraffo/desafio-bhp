@@ -70,7 +70,7 @@ const Home = (props) => {
             </select>
           </div>
 
-          <button type="buttonHome" class="btn btn-secondary">CONTINUAR</button>
+          <button type="buttonHome" className="btn btn-secondary">CONTINUAR</button>
         </div>
         <div>
         <Modal isOpen={modalIsOpen} style={modalStyles}>

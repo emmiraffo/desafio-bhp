@@ -24,7 +24,7 @@ function Calculator(props) {
         <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
         <h1 className="name">CALCULADORA</h1>
         <p  >ELC</p>
-        <h1 className="nameForm">Ingreso de parámetros</h1>
+        <h1 className="nameParam">Ingreso de parámetros</h1>
         <form onSubmit={checkIsSafe} class="needs-validation" >
             <div class="form-check">
                 <div className="row">
