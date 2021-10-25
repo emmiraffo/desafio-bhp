@@ -32,20 +32,17 @@ function generateDoc () {
     
 
     return (
-        <div>
-            <nav className="d-flex flex-r justify-content-between">
+        <div className="container-check">
+            <nav className="nav-checkbox">
                 <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
-                <button onClick={backToHome}>Volver a Inicio</button>
+                <i class="fa fa-home" aria-hidden="true"></i>
+
+                {/* <button onClick={backToHome}>Volver a Inicio</button> */}
             </nav>
             <div className="container-checkbox">
                 <form onSubmit={handleSubmit(onSubmit)} id="form" className="p-1">
                     <h4 className="text-center m-1"> Revisión de arnés de seguridad y puntos de anclaje.</h4>
-                    <h6 className="m-2">Asegúrate de revisar tu área de trabajo.</h6>
-                    <div className="m-2">
-                        <label className="me-1">Ingresa tu nombre</label>
-                        <input type="text" className="input-name" name="nombre" {...register("p1", { required: true })}/>
-                            {errors.p1 && <span className="text-danger text-small">Tu nombre es requerido</span>} 
-                    </div>     
+                    <h6 className="m-2">Asegúrate de revisar tu área de trabajo.</h6>    
                     <h5>Estado del arnés</h5>
                     <div className="form-check m-1">
                         <input className="form-check-input my-2" type="checkbox" name="check" {...register("p2", { required: true })} />
