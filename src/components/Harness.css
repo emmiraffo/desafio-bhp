@@ -21,10 +21,7 @@
   }
   /* Laptops, Desktops */
   @media (min-width: 1025px) {
-    .container-harness{
-        background-color: ;
-        
-    }
+ 
     .main-harness{
         display: flex;
         flex-direction: column;
