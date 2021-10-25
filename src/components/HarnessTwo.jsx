@@ -7,7 +7,7 @@ const HarnessTwo = (props) => {
   let history = useHistory();
 
   const continuar = () => {
-    history.push('/checklist');
+    history.push('/checklist', props);
   }
 
   return (
