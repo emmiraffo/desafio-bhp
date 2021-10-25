@@ -23,10 +23,8 @@ const CheckList = () => {
 
 
 
-function generatePDF () {
-
+function generateDoc () {
     const form = document.getElementById("form");
-
     html2pdf()
     .from(form)
     .save();
@@ -212,7 +210,7 @@ function generatePDF () {
                 </form>
             </div>
             <div className="d-flex flex-column justify-content-center align-items-center">
-                    <button className="btn-pdf" onClick={generatePDF}></button>
+                    <button className="btn-pdf" onClick={generateDoc}></button>
                     <span className="text-pdf" >Descargar lista de revisión</span>
             </div>
         </div>
