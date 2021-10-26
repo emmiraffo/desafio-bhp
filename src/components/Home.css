@@ -1,20 +1,6 @@
 /*Home*/
 .containerHome{
     height: 100vh;
-<<<<<<< HEAD
-    width: auto;
-}
-
-.bhpLogo{
-    position: absolute;
-    left: 24px;
-    top: 14px;
-}
-.backgroundImg{
-    width: 100%; 
-    height: 150px; 
-    background-size: 100%;
-=======
     width: 100vw;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/mujer.png?alt=media&token=452bad60-3652-4265-b294-6908dc960340);
     background-size: cover;
@@ -23,7 +9,6 @@
 
 .imgDesktop{
     display: none;
->>>>>>> 69cbdaaf3c8b3147e5672f8c532007df9b693b3f
 }
 
 
@@ -62,21 +47,7 @@
 .backgroundSelectBtn{
     padding-top: 20%;
     width: 304px;
-<<<<<<< HEAD
-    height: 44px;
-    left: 55px;
-    top: 415px;
-
-}
-
-.form-select{
-    border-radius: 50px;
-    background-attachment: white;
-    color:black;
-
-=======
     margin: auto;
->>>>>>> 69cbdaaf3c8b3147e5672f8c532007df9b693b3f
 }
 
 .buttonHome{
@@ -93,8 +64,6 @@
 
 .Modal{
     width:80%
-<<<<<<< HEAD
-=======
 }
 
 /**** VISTA DESKTOP ****/ 
@@ -149,6 +118,5 @@
 }
 
 
->>>>>>> 69cbdaaf3c8b3147e5672f8c532007df9b693b3f
 
 }
