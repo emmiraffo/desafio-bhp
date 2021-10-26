@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ffff;
+    opacity: .8;
 }
 .nav-checkbox{
     display: flex;

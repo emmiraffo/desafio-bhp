@@ -15,8 +15,10 @@ const modalStyles = {
         marginRight: '-30%',
         transform: 'translate(-50%, -50%)',
         overflow: 'scroll',
-        width: '80%',
-        height: '100vh'
+        width: '90%',
+        height: '90%',
+        color: 'black',
+        backgroundColor: 'transparent' 
 
     },
 };
@@ -88,8 +90,8 @@ function Calculator(props) {
             </form>
         </div>
         <Modal isOpen={modalIsOpen} style={modalStyles}>
+            <button className='btn-modal' onClick={handleCloseModal}> X </button>
             <Glossary />
-            <button onClick={handleCloseModal}> X </button>
         </Modal>
     </div>
  
