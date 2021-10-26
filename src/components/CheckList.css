@@ -1,21 +1,51 @@
-.check-container{
-    margin: 2%;
+.container-check{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+.nav-checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+}
+.container-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    background: rgba(229, 101, 29, 0.09);
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;  
 }
 
-.btn-calculator{
-    align-self: center;
+.input-name{
+    width:300px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+
+}
+.container-checkbox_item{
+    border:none;
+}
+
+.btn-checklist{
     background-color: #E5651D;
-    font-size: 0.8em;
-    height: 3em;  
+    font-size: 0.9em;
+    height: 2.5rem;
+    width: 7rem;
     border-radius: 50px; 
     color: white;
     border: none;
-    margin-top: 5%;
+   
     
 }
 .btn-pdf{
@@ -24,4 +54,23 @@
     width: 32px;
     height: 32px;
     border-radius: 20px;
+}
+.text-pdf{
+    font-size: 0.7rem;
+
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+}
+/* Laptops, Desktops */
+@media (min-width: 1025px) {
+.container-checkbox{
+    width: 50%
+}
+.nav-checkbox i {
+    width: 120px;
+}
+
 }
