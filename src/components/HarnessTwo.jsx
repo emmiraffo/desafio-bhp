@@ -44,7 +44,7 @@ const HarnessTwo = () => {
             <div className="accordion-body">
               <div className="harnessInfo">
                 <div>
-                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/AFKEW2EGVZFCLDKRA2B7TJ65Z4.png" width="150px" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/LINEA-DE-VIDA-RETRACTIL-EN-CINTA-HARU-35-MTS%201.png?alt=media&token=f2cce6d7-80a0-4cfd-afa7-9b321ce7123e" width="150px" />
                 </div>
                 <div>
                   <h6>El punto de anclaje deberá cumplir con los siguientes requisitos:</h6>

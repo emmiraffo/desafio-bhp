@@ -9,10 +9,11 @@ const modalStyles = {
   content: {
     top: '50%',
     left: '50%',
-    right: 'auto',
+    right: '10%',
     bottom: 'auto',
-    marginRight: '-50%',
+    marginRight: '-30%',
     transform: 'translate(-50%, -50%)',
+
   },
 };
 
@@ -52,7 +53,7 @@ const Home = (props) => {
             <img className="bhpLogo" src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" width="100px"/>
           </div>
           <div className="backgroundImg">
-            <img className="" src="https://i.pinimg.com/564x/5a/6a/74/5a6a7434407e7b91cde3c81ab6ab425b.jpg"/>
+            <img className="" src="https://i.pinimg.com/564x/27/d9/71/27d97141788c1c2f604e1d2949f0390a.jpg"/>
           </div>        
         </div>
 
@@ -70,9 +71,9 @@ const Home = (props) => {
             </select>
           </div>
 
-          <button type="buttonHome" class="btn btn-secondary">CONTINUAR</button>
+          
         </div>
-        <div>
+        <div className="modal">
         <Modal isOpen={modalIsOpen} style={modalStyles}>
           <h1>Acuerdo de licencia de usuario final</h1>
           <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
