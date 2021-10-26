@@ -37,10 +37,15 @@ const CheckList = (props) => {
         <div className="container-check">
             <nav className="nav-checkbox">
                 <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
-                <div className="d-flex flex-row justify-content-center ">
-                    <button className="btn-pdf" onClick={generateDoc}></button>
-                    {/* <span className="text-pdf" >Descargar lista de revisión</span> */}
-                    <button className="btn-home" onClick={backToHome}> <i class="fa fa-home fa-2x" aria-hidden="true"></i></button>
+                <div className="d-flex flex-row justify-content-center">
+                    <div className="d-flex flex-column justify-content-center align-items-center">
+                        <button className="btn-pdf" onClick={generateDoc}></button>
+                        <span className="text-pdf" >Descargar revisión</span>
+                    </div>
+                    <div className="d-flex flex-column justify-content-center align-items-center">
+                        <button className="btn-home" onClick={backToHome}> <i class="fa fa-home fa-2x" aria-hidden="true"></i></button>
+                        <span className="text-pdf" >Ir a inicio</span>
+                    </div>
                 </div>
             </nav>
             <main className="main-checkbox">
@@ -53,48 +58,48 @@ const CheckList = (props) => {
                     </div>
                     <div className="form-sub-category">
                         <h5>Estado del arnés</h5>
-                        <div className="form-check-container">
-                            <input className="form-checkbox" type="checkbox" name="check" {...register("p2", { required: true })} />
+                        <div className="form-check m-1">
+                            <input className="form-check-input" type="checkbox" name="check" {...register("p2", { required: true })} />
                             <label className="form-check-label" id="form1">
                                 Se encuentra libre de grasa, pinturas, etc.
                             </label>
                             <div className="linea"></div>
                             {errors.p2 && <span className="text-danger text-small">Este ítem es requerido. Para continuar tu trabajo contacta a tu supervisor/a.</span>}
                         </div>
-                        <div className="form-check-container">
-                            <input className="form-checkbox" type="checkbox" name="check" {...register("p3", { required: true })} />
+                        <div className="form-check m-1">
+                            <input className="form-check-input" type="checkbox" name="check" {...register("p3", { required: true })} />
                             <label className="form-check-label">
                                 No presenta costuras deshilachadas.
                             </label>
                             <div className="linea"></div>
                             {errors.p3 && <span className="text-danger text-small">Este ítem es requerido. Para continuar tu trabajo contacta a tu supervisor/a.</span>}
                         </div>
-                        <div className="form-check-container">
-                            <input className="form-checkbox" type="checkbox" value="" name="check" {...register("p4", { required: true })} />
+                        <div className="form-check m-1">
+                            <input className="form-check-input" type="checkbox" value="" name="check" {...register("p4", { required: true })} />
                             <label className="form-check-label">
                                 Posee la placa de identificación.
                             </label>
                             <div className="linea"></div>
                             {errors.p4 && <span className="text-danger text-small">Este ítem es requerido. Para continuar tu trabajo contacta a tu supervisor/a.</span>}
                         </div>
-                        <div className="form-check-container">
-                            <input className="form-checkbox" type="checkbox" value="" name="check" {...register("p5", { required: true })} />
+                        <div className="form-check m-1">
+                            <input className="form-check-input" type="checkbox" value="" name="check" {...register("p5", { required: true })} />
                             <label className="form-check-label">
                                 Se encontraba correctamente almacenado.
                             </label>
                             <div className="linea"></div>
                             {errors.p5 && <span className="text-danger text-small">Este ítem es requerido. Para continuar tu trabajo contacta a tu supervisor/a.</span>}
                         </div>
-                        <div className="form-check-container">
-                            <input className="form-checkbox" type="checkbox" name="check" {...register("p6", { required: true })} />
+                        <div className="form-check m-1">
+                            <input className="form-check-input" type="checkbox" name="check" {...register("p6", { required: true })} />
                             <label className="form-check-label" >
                                 No presenta cortes o desgarros.
                             </label>
                             <div className="linea"></div>
                             {errors.p6 && <span className="text-danger text-small">Este ítem es requerido. Para continuar tu trabajo contacta a tu supervisor/a.</span>}
                     </div>
-                    <div className="form-check-container">
-                        <input className="form-checkbox"  type="checkbox" name="check" {...register("p7", { required: true })} />
+                    <div className="form-check m-1">
+                        <input className="form-check-input"  type="checkbox" name="check" {...register("p7", { required: true })} />
                         <label className="form-check-label" >
                             Posee el tag de inspección Cesmec.
                         </label>
