@@ -16,9 +16,6 @@
     background-color: transparent;
     border: none;
 }
-.container-img-desktop{
-    display: none;
-}
 .container-checkbox{
     display: flex;
     flex-direction: column;

@@ -17,7 +17,6 @@ export const HarnessOne = (props) => {
     <nav className="nav-container-check">
       <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" width="100px" alt="logo BHP" />
     </nav>
-    <div>
     <div className="container-desktop"> 
       <section>
         <h1 className="name">Hola, {name}</h1>
@@ -76,7 +75,6 @@ export const HarnessOne = (props) => {
               <button type="submit" className="btn-form-harness">CONTINUAR</button>
         </form>
       </section>
-    </div>
     </div>
   </div>
   )
