@@ -53,9 +53,9 @@ const CheckList = (props) => {
                     </div>
                     <div className="form-sub-category">
                         <h5>Estado del arnés</h5>
-                        <div className="form-check m-1">
-                            <input className="form-check-input my-2" type="checkbox" name="check" {...register("p2", { required: true })} />
-                            <label className="form-check-label my-1" id="form1">
+                        <div className="form-check-container">
+                            <input className="form-checkbox" type="checkbox" name="check" {...register("p2", { required: true })} />
+                            <label className="form-check-label" id="form1">
                                 Se encuentra libre de grasa, pinturas, etc.
                             </label>
                             {errors.p2 && <span className="text-danger text-small">Este ítem es requerido. Para continuar tu trabajo contacta a tu supervisor/a.</span>}

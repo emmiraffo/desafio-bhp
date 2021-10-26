@@ -25,8 +25,11 @@
    
 }
 .form-sub-category{
-    border: 1px solid;
+    border: none;
     margin: 2%;
+    padding: 2%;
+    box-shadow: 2px 10px 10px -6px black;
+    border-radius: .8rem;
 }
 .container-checkbox_item{
     border:none;
