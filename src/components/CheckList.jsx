@@ -37,7 +37,7 @@ const CheckList = (props) => {
         <div className="container-check">
             <nav className="nav-checkbox">
                 <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
-                <div className="d-flex flex-row justify-content-center align-items-center">
+                <div className="d-flex flex-row justify-content-center ">
                     <button className="btn-pdf" onClick={generateDoc}></button>
                     {/* <span className="text-pdf" >Descargar lista de revisión</span> */}
                     <button className="btn-home" onClick={backToHome}> <i class="fa fa-home fa-2x" aria-hidden="true"></i></button>
