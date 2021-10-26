@@ -1,6 +1,6 @@
 import React from 'react';
 import html2pdf from 'html2pdf.js'
-import './calculadora.css';
+import './result.css';
 
 
 function Result(props) {
