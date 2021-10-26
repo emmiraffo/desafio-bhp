@@ -34,11 +34,11 @@ const CheckList = (props) => {
 
 
     return (
-        <div>
-            <nav className="d-flex flex-r justify-content-between">
+        <div className="container-check">
+            <nav className="nav-checkbox">
                 <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
-                <button onClick={backToHome}>Volver a Inicio</button>
-
+                <i className="fa fa-home" aria-hidden="true"></i>
+                {/* <button onClick={backToHome}>Volver a Inicio</button> */}
             </nav>
             <div className="container-checkbox">
                 <form onSubmit={handleSubmit(onSubmit)} id="form" className="p-1">
