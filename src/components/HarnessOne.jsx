@@ -68,8 +68,8 @@ export const HarnessOne = (props) => {
         <form className="form-harness" onSubmit={continuar}>  
               <div className="form-check">
                 <input className="form-check-input my-2" type="checkbox" required/>
-                <label className="form-check-label my-1 fw-light fs-6">
-                  Tomo conocimiento de las indicaciones y me comprometo a cumplir con los estándares establecidos.
+                <label  className="form-check-label my-1 fw-light fs-6">
+                  <b>Tomo conocimiento de las indicaciones y me comprometo a cumplir con los estándares establecidos.</b>
                 </label>
               </div>
               <button type="submit" className="btn-form-harness">CONTINUAR</button>
