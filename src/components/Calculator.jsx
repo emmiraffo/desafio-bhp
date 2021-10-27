@@ -25,21 +25,23 @@ const modalStyles = {
 
 
 function Calculator(props) {
-    const [state, setState] = useState({ ERT: 0, LE: 0, ET: 0, ELC: 0 })
+    const [state, setState] = useState({ name:props.name , rut:props.rut  , ERT: 0, LE: 0, ET: 0, ELC: 0 })
     let history = useHistory();
 
-    console.log("EL RESULTADO", state)
+    console.log("EL RESULTADO", props )
+    console.log("EL PPPPP", state )
+
     const checkIsSafe = () => {
         const ea = 1.2
         const ms = 1
-        var elc = (ea + ms + state.LE + state.ET)
-        var diff =  state.ERT - elc
+        var elc = (ea + ms + state.LE + (state.ET))
+        var diff = state.ERT - elc
 
 
-        if (elc <= state.ERT && diff <= 2){
+        if (elc <= state.ERT) {
             history.push("/resultado", { ...state, ELC: elc })
         } else {
-            history.push("/error");
+            history.push("/error", { ...state, ELC: elc });
         }
     }
 
@@ -64,7 +66,7 @@ function Calculator(props) {
 
         <div className="container-calculator">
 
-            { !modalIsOpen && <a className="info" onClick={handleOpenModal} ><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> </a>}
+            {!modalIsOpen && <a className="info" onClick={handleOpenModal} ><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> </a>}
             <h1 className="name">CALCULADORA</h1>
             <h2 className="name-medium" >ELC</h2>
             <h1 className="nameParam">Ingreso de parámetros</h1>
@@ -94,7 +96,7 @@ function Calculator(props) {
             <Glossary />
         </Modal>
     </div>
- 
+
 }
 
 export default Calculator;
