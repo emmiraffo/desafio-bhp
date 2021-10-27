@@ -23,9 +23,7 @@ function App() {
         </Route>
         <Route path="/harnessone" render={(props) => <HarnessOne  {...props.location.state} />} />
         <Route path="/resultado" render={(props) => <Result {...props.location.state} />} />
-        <Route path="/error">
-          <WarningDanger />
-        </Route>
+        <Route path="/error" render={(props) => <WarningDanger {...props.location.state} />} />
         <Route path="/harnesstwo" render={(props) => <HarnessTwo  {...props.location.state} />} />
         <Route path="/harnessthree" render={(props) => <HarnessThree  {...props.location.state} />}/>
         <Route path="/calculadora" >

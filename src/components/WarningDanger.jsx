@@ -3,7 +3,7 @@ import './calculadora.css';
 
 
 function WarningDanger(props) {
-
+    const { ERT, LE, ET, ELC } = props
 
     return <div>
         <div>
@@ -12,6 +12,7 @@ function WarningDanger(props) {
             <div className="result-warning">
             <i class="fa fa-times-circle fa-3x" aria-hidden="true"></i>
             <h2 className="warning" >  ESPACIO LIBRE REQUERIDO PARA DETENER LA CAIDA NO CUMPLE CON LAS MEDIDAS DE SEGURIDAD</h2>
+            <h1 className="nameForm">{ELC.toFixed(2)} metros</h1><br/>
             </div>
 
             <div className="nota">
