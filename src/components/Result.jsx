@@ -4,7 +4,8 @@ import './calculadora.css';
 
 
 function Result(props) {
-    const { ERT, LE, ET, ELC } = props
+    const { ERT, LE, ET, ELC , name , rut } = props
+
     console.log("LAS PROPS", props)
 
     const generatePDF = () => {
@@ -19,6 +20,7 @@ function Result(props) {
 
     return <div id="result" >
         <img src="https://firebasestorage.googleapis.com/v0/b/elc-bhp.appspot.com/o/bhp_orn_rgb_pos%5B1%5D.png?alt=media&token=e67982c5-67f2-4153-9201-a18c75117eff" alt="logo" width="100px" />
+       
         <div className="container1">
             <div className="containerGif" >
                 <div className="nota">
@@ -39,6 +41,8 @@ function Result(props) {
                     <h1 className="nameForm">{ELC.toFixed(2)} metros</h1>
 
                     <div className="ocult">
+                        <p className="nameOcult"><b>Nombre: {name}</b></p>
+                        <p className="nameOcult"><b>Rut: {rut}</b></p>
                         <p className="nameOcult"> ERT= {ERT.toFixed(1)} LE= {LE.toFixed(1)} ET = {ET.toFixed(1)}</p>
                         <p className="nameOcult"> Información adicional que se necesite mostrar en el informe podrá realizarse en este apartado</p>
                     </div>
